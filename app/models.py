@@ -20,7 +20,7 @@ class UserProfile(models.Model):
     phone = models.CharField(max_length=20, null=True)
     dob = models.DateField(null=True)
     location = models.CharField(max_length=200, null=True)
-    profile_image = models.ImageField(upload_to='images/profile', blank=True, null=True)
+    profile_image = models.ImageField(upload_to='images', blank=True, null=True)
     guardian_name = models.CharField(max_length=200, null=True)
     guardian_phone = models.CharField(max_length=20, null=True)
     guardian_email = models.EmailField(max_length=30,null=True)
